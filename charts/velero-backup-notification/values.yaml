@@ -1,0 +1,22 @@
+image:
+  repository: ''
+  tag: ''
+
+slack:
+  enabled: True
+  webhook: "https://...."
+  channel: ''
+  username: ''
+
+email:
+  enabled: True
+  smtp:
+    host: 'some-smtp-host.com'
+    port: 587
+    username: 'blah'
+    password: 'blah'
+  from_address: ''
+  to_address: ''
+  subject_prefix: "[Velero]"
+
+velero_namespace: 'velero'
