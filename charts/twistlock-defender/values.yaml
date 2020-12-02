@@ -49,3 +49,5 @@ selinux_header: ""
 selinux_options: ""
 service_parameter: ''
 ws_address: ''
+serviceAccount:
+  annotations: {}
