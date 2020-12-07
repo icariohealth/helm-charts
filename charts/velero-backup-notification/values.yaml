@@ -1,6 +1,7 @@
 image:
   repository: ''
   tag: ''
+  pullpolicy: 'Always'
 resources: {}
 
 slack:

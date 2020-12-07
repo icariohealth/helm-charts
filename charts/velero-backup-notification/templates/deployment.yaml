@@ -16,7 +16,7 @@ spec:
       containers:
         - name: velero-backup-notification
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: {{ .Values.image.pullpolicy }}
           env:
             - name: VELERO_NAMESPACE
               value: {{ .Values.velero_namespace | quote }}
