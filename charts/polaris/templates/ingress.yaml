@@ -1,0 +1,25 @@
+---
+{{- if .Values.dashboard.ingress.enabled -}}
+apiVersion: 'networking.k8s.io/v1beta1'
+kind: 'Ingress'
+metadata:
+  name: 'polaris'
+  namespace: {{.Values.dashboard.ingress.namespace}}
+  annotations:
+    {{- range $key, $value := .Values.dashboard.ingress.annotations }}
+    {{ $key }}: {{ $value | quote }}
+    {{- end }}
+  labels:
+    app: 'polaris'
+    app.kubernetes.io/name: {{ include "polaris.name" . }}
+    helm.sh/chart: {{ include "polaris.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  rules:
+    - http:
+        paths:
+          - path: '/*'
+            backend:
+              serviceName: 'polaris-dashboard'
+              servicePort: 80
+{{- end -}}
