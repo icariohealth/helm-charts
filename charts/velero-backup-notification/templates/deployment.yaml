@@ -62,3 +62,5 @@ spec:
                 secretKeyRef:
                   key: email_smtp_password
                   name: velero-backup-notification-secrets
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}

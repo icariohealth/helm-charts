@@ -1,6 +1,7 @@
 image:
   repository: ''
   tag: ''
+resources: {}
 
 slack:
   enabled: True
