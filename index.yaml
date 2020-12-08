@@ -3,7 +3,26 @@ entries:
   aws-efs-csi-driver:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2020-12-08T10:50:58.803271-06:00"
+    created: "2020-12-08T12:47:56.564459-06:00"
+    description: A Helm chart for AWS EFS CSI Driver
+    digest: 5d60ab489c7c27eaef5b31ae8ce91c9f7924898ee510778b05a8fc4c3798255b
+    home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
+    keywords:
+    - aws
+    - efs
+    - csi
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - name: leakingtapan
+    name: aws-efs-csi-driver
+    sources:
+    - https://github.com/kubernetes-sigs/aws-efs-csi-driver
+    urls:
+    - https://charts.novuhealth.io/aws-efs-csi-driver-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2020-12-08T12:47:56.564031-06:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 82f6fcdfeb63975665a2c9914695df0dae83e9a042caac9c756369893b6f704e
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -22,7 +41,7 @@ entries:
     version: 0.2.2
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2020-12-08T10:50:58.80283-06:00"
+    created: "2020-12-08T12:47:56.563601-06:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 621778fe471216acc10dea8badf372605515fd0904ff6e61cc4609a917d80965
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -42,7 +61,7 @@ entries:
   polaris:
   - apiVersion: v1
     appVersion: "1.2"
-    created: "2020-12-08T10:50:58.809176-06:00"
+    created: "2020-12-08T12:47:56.565133-06:00"
     description: Validation of best practices in your Kubernetes clusters
     digest: 7c833d291575af6514201b1b9b58f511f992187cfa9930e51e7373ae51de7a20
     icon: https://raw.githubusercontent.com/FairwindsOps/polaris/master/pkg/dashboard/assets/favicon-32x32.png
@@ -52,7 +71,7 @@ entries:
     version: 1.3.2
   twistlock-defender:
   - apiVersion: v1
-    created: "2020-12-08T10:50:58.819194-06:00"
+    created: "2020-12-08T12:47:56.570781-06:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: adc39f831cb3262c79b2d6dcd8642c909a8b0703a86d455e7a915605cabb1048
     name: twistlock-defender
@@ -60,7 +79,7 @@ entries:
     - https://charts.novuhealth.io/twistlock-defender-20.10.1.tgz
     version: 20.10.1
   - apiVersion: v1
-    created: "2020-12-08T10:50:58.817508-06:00"
+    created: "2020-12-08T12:47:56.57018-06:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: 1c26f82aa45c922160af96f876a5a08c53f3832002cbbaf19fa95b0db92a0198
     name: twistlock-defender
@@ -68,7 +87,7 @@ entries:
     - https://charts.novuhealth.io/twistlock-defender-20.10.0.tgz
     version: 20.10.0
   - apiVersion: v1
-    created: "2020-12-08T10:50:58.815858-06:00"
+    created: "2020-12-08T12:47:56.569597-06:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: c80721b86d3680bfadbbc38a1f872ae51b0fe2e02fa56156a4dc5e3b0ee6f934
     name: twistlock-defender
@@ -76,7 +95,7 @@ entries:
     - https://charts.novuhealth.io/twistlock-defender-20.09.352.tgz
     version: 20.09.352
   - apiVersion: v1
-    created: "2020-12-08T10:50:58.81418-06:00"
+    created: "2020-12-08T12:47:56.569011-06:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: 554ed9ce37e5fc7136a33db07fb2243de327adf6fc0845867355328946821fd6
     name: twistlock-defender
@@ -84,7 +103,7 @@ entries:
     - https://charts.novuhealth.io/twistlock-defender-20.09.351.tgz
     version: 20.09.351
   - apiVersion: v1
-    created: "2020-12-08T10:50:58.812525-06:00"
+    created: "2020-12-08T12:47:56.568053-06:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: 8dbb5f1ab6b29d18aad71d6819e3501537ac742bf1aded6fccf56bdafea4c431
     name: twistlock-defender
@@ -92,7 +111,7 @@ entries:
     - https://charts.novuhealth.io/twistlock-defender-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2020-12-08T10:50:58.810887-06:00"
+    created: "2020-12-08T12:47:56.567455-06:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: a5ca2b5c61ffd87c9b08c1bac0d0cbe424bc18b55167589a972298322c7972ff
     name: twistlock-defender
@@ -102,7 +121,7 @@ entries:
   velero-backup-notification:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-08T10:50:58.822454-06:00"
+    created: "2020-12-08T12:47:56.572711-06:00"
     description: A Helm chart to send email/Slack notifications for Velero backups/restores
     digest: 9c097051593b40ac2b694f542a587b9755a49795c5fe0b57a3af0d32b61ff2ce
     name: velero-backup-notification
@@ -111,7 +130,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-08T10:50:58.821364-06:00"
+    created: "2020-12-08T12:47:56.571787-06:00"
     description: A Helm chart to send email/Slack notifications for Velero backups/restores
     digest: 71324debe91a2b67d8909509c6074d16632be2ed7a74a5d3550208cb8fb9778c
     name: velero-backup-notification
@@ -120,11 +139,11 @@ entries:
     version: 1.0.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-08T10:50:58.820276-06:00"
+    created: "2020-12-08T12:47:56.571471-06:00"
     description: A Helm chart to send email/Slack notifications for Velero backups/restores
     digest: dee9cbcba1afcfdb64a1b114b7bfecf96001c1baf55d48e3a54e65200299c45a
     name: velero-backup-notification
     urls:
     - https://charts.novuhealth.io/velero-backup-notification-0.1.1.tgz
     version: 0.1.1
-generated: "2020-12-08T10:50:58.799364-06:00"
+generated: "2020-12-08T12:47:56.562987-06:00"
