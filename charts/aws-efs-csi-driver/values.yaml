@@ -7,15 +7,17 @@ replicaCount: 2
 image:
   repository: amazon/aws-efs-csi-driver
   tag: "v1.0.0"
-  pullPolicy: IfNotPresent
+  pullPolicy: 'Always'
 
 sidecars:
   livenessProbeImage:
     repository: quay.io/k8scsi/livenessprobe
     tag: "v2.0.0"
+    pullPolicy: 'Always'
   nodeDriverRegistrarImage:
     repository: quay.io/k8scsi/csi-node-driver-registrar
     tag: "v1.3.0"
+    pullPolicy: 'Always'
 
 imagePullSecrets: []
 nameOverride: ""
