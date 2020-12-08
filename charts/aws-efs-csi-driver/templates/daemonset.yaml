@@ -43,7 +43,6 @@ spec:
           securityContext:
             privileged: true
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          pullPolicy: {{ .Values.image.pullPolicy }}
           args:
             - --endpoint=$(CSI_ENDPOINT)
             - --logtostderr
@@ -75,7 +74,6 @@ spec:
             failureThreshold: 5
         - name: cs-driver-registrar
           image: {{ printf "%s:%s" .Values.sidecars.nodeDriverRegistrarImage.repository .Values.sidecars.nodeDriverRegistrarImage.tag }}
-          pullPolicy: {{.Values.sidecars.nodeDriverRegistrarImage.pullPolicy}}
           args:
             - --csi-address=$(ADDRESS)
             - --kubelet-registration-path=$(DRIVER_REG_SOCK_PATH)
@@ -96,7 +94,6 @@ spec:
               mountPath: /registration
         - name: liveness-probe
           image: {{ printf "%s:%s" .Values.sidecars.livenessProbeImage.repository .Values.sidecars.livenessProbeImage.tag }}
-          pullPolicy: {{.Values.sidecars.livenessProbeImage.pullPolicy}}
           args:
             - --csi-address=/csi/csi.sock
             - --health-port=9809
