@@ -1,5 +1,5 @@
 secrets: # If using secrets in charts, set to true and fille in values for secret
-  enabled: false
+  enabled: true
 COMMUNICATION_PORT: "443"
 CONSOLE_CN: ''
 DATA_FOLDER: /var/lib/twistlock
