@@ -68,7 +68,7 @@ spec:
         - name: DEFENDER_CLUSTER_ID
           valueFrom:
             secretKeyRef:
-              name: twistlock-secrets
+              name: twistlock
               key: cluster_id
         - name: DEFENDER_CLUSTER
           value: "{{ .Values.cluster }}"
@@ -81,7 +81,7 @@ spec:
         - name: INSTALL_BUNDLE
           valueFrom:
             secretKeyRef:
-              name: twistlock-secrets
+              name: twistlock
               key: install_bundle
         - name: HOST_CUSTOM_COMPLIANCE_ENABLED
           value: "{{ .Values.host_custom_compliance }}"
@@ -131,7 +131,7 @@ spec:
       volumes:
       - name: certificates
         secret:
-          secretName: twistlock-secrets
+          secretName: twistlock
           defaultMode: 256
       - name: syslog-socket
         hostPath:
