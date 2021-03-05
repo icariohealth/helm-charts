@@ -35,8 +35,7 @@ datadog:
   # datadog.appKeyExistingSecret -- Use existing Secret which stores APP key instead of creating a new one
   ## If set, this parameter takes precedence over "appKey".
   appKeyExistingSecret:  # <DATADOG_APP_KEY_SECRET>
-
-  useExternalSecret: 'datadog' # <DATADOG_EXTERNAL_SECRET_NAME>
+  
   # datadog.securityContext -- Allows you to overwrite the default PodSecurityContext on the Daemonset or Deployment
   securityContext: {}
   #  seLinuxOptions:
