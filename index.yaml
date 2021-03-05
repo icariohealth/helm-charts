@@ -3,7 +3,7 @@ entries:
   aws-efs-csi-driver:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-03-05T12:33:43.013456-06:00"
+    created: "2021-03-05T14:43:22.945372-06:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 542f2b37e85f2e60986a78c7c93d7a27b60bbc3883eaef82649b8e170646233d
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -22,7 +22,7 @@ entries:
     version: 0.2.4
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-03-05T12:33:43.01232-06:00"
+    created: "2021-03-05T14:43:22.94396-06:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 5d60ab489c7c27eaef5b31ae8ce91c9f7924898ee510778b05a8fc4c3798255b
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -41,7 +41,7 @@ entries:
     version: 0.2.3
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-03-05T12:33:43.011348-06:00"
+    created: "2021-03-05T14:43:22.942856-06:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 82f6fcdfeb63975665a2c9914695df0dae83e9a042caac9c756369893b6f704e
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -60,7 +60,7 @@ entries:
     version: 0.2.2
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-03-05T12:33:43.010236-06:00"
+    created: "2021-03-05T14:43:22.941817-06:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 621778fe471216acc10dea8badf372605515fd0904ff6e61cc4609a917d80965
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -80,7 +80,36 @@ entries:
   datadog:
   - apiVersion: v1
     appVersion: "7"
-    created: "2021-03-05T12:33:43.034525-06:00"
+    created: "2021-03-05T14:43:22.977772-06:00"
+    dependencies:
+    - condition: clusterAgent.metricsProvider.useDatadogMetrics
+      name: datadog-crds
+      repository: https://helm.datadoghq.com
+      tags:
+      - install-crds
+      version: =0.1.1
+    - condition: datadog.kubeStateMetricsEnabled
+      name: kube-state-metrics
+      repository: https://charts.helm.sh/stable
+      version: =2.8.11
+    description: Datadog Agent
+    digest: 362812965c7e8af90fc23f1f01d0ead25491c529b1867ea230aab324596ce26f
+    home: https://www.datadoghq.com
+    icon: https://datadog-live.imgix.net/img/dd_logo_70x75.png
+    keywords:
+    - monitoring
+    - alerting
+    - metric
+    name: datadog
+    sources:
+    - https://app.datadoghq.com/account/settings#agent/kubernetes
+    - https://github.com/DataDog/datadog-agent
+    urls:
+    - https://charts.novuhealth.io/datadog-2.10.4.tgz
+    version: 2.10.4
+  - apiVersion: v1
+    appVersion: "7"
+    created: "2021-03-05T14:43:22.968143-06:00"
     dependencies:
     - condition: clusterAgent.metricsProvider.useDatadogMetrics
       name: datadog-crds
@@ -109,7 +138,7 @@ entries:
     version: 2.10.3
   - apiVersion: v1
     appVersion: "7"
-    created: "2021-03-05T12:33:43.025172-06:00"
+    created: "2021-03-05T14:43:22.957862-06:00"
     dependencies:
     - condition: clusterAgent.metricsProvider.useDatadogMetrics
       name: datadog-crds
@@ -139,7 +168,7 @@ entries:
   polaris:
   - apiVersion: v1
     appVersion: "1.2"
-    created: "2021-03-05T12:33:43.036292-06:00"
+    created: "2021-03-05T14:43:22.979062-06:00"
     description: Validation of best practices in your Kubernetes clusters
     digest: 7c833d291575af6514201b1b9b58f511f992187cfa9930e51e7373ae51de7a20
     icon: https://raw.githubusercontent.com/FairwindsOps/polaris/master/pkg/dashboard/assets/favicon-32x32.png
@@ -150,7 +179,7 @@ entries:
   twistlock-defender:
   - apiVersion: v1
     appVersion: 20.12.535
-    created: "2021-03-05T12:33:43.037876-06:00"
+    created: "2021-03-05T14:43:22.980118-06:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: ea29a7f65d5e83af2ce6ec6b3c384428874dc3c615757a389431e3cae184c7d1
     name: twistlock-defender
@@ -159,7 +188,7 @@ entries:
     version: 21.03.10
   - apiVersion: v1
     appVersion: 20.12.535
-    created: "2021-03-05T12:33:43.039365-06:00"
+    created: "2021-03-05T14:43:22.981199-06:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: 835fb51b42c9eadf8bde84e9e0744818c7f239e7a1a637a15f92c4937c6d26a3
     name: twistlock-defender
@@ -169,7 +198,7 @@ entries:
   velero-backup-notification:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-03-05T12:33:43.04126-06:00"
+    created: "2021-03-05T14:43:22.983468-06:00"
     description: A Helm chart to send email/Slack notifications for Velero backups/restores
     digest: 9c097051593b40ac2b694f542a587b9755a49795c5fe0b57a3af0d32b61ff2ce
     name: velero-backup-notification
@@ -178,11 +207,11 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-03-05T12:33:43.040414-06:00"
+    created: "2021-03-05T14:43:22.982243-06:00"
     description: A Helm chart to send email/Slack notifications for Velero backups/restores
     digest: 71324debe91a2b67d8909509c6074d16632be2ed7a74a5d3550208cb8fb9778c
     name: velero-backup-notification
     urls:
     - https://charts.novuhealth.io/velero-backup-notification-1.0.0.tgz
     version: 1.0.0
-generated: "2021-03-05T12:33:43.009125-06:00"
+generated: "2021-03-05T14:43:22.940506-06:00"
