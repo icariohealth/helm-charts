@@ -3,7 +3,7 @@ entries:
   aws-efs-csi-driver:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-03-15T17:55:33.684762-05:00"
+    created: "2021-03-16T15:24:59.269953-05:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 542f2b37e85f2e60986a78c7c93d7a27b60bbc3883eaef82649b8e170646233d
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -22,7 +22,7 @@ entries:
     version: 0.2.4
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-03-15T17:55:33.683694-05:00"
+    created: "2021-03-16T15:24:59.267411-05:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 5d60ab489c7c27eaef5b31ae8ce91c9f7924898ee510778b05a8fc4c3798255b
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -41,7 +41,7 @@ entries:
     version: 0.2.3
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-03-15T17:55:33.682543-05:00"
+    created: "2021-03-16T15:24:59.265664-05:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 82f6fcdfeb63975665a2c9914695df0dae83e9a042caac9c756369893b6f704e
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -60,7 +60,7 @@ entries:
     version: 0.2.2
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-03-15T17:55:33.681514-05:00"
+    created: "2021-03-16T15:24:59.260604-05:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 621778fe471216acc10dea8badf372605515fd0904ff6e61cc4609a917d80965
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -80,7 +80,7 @@ entries:
   datadog:
   - apiVersion: v1
     appVersion: "7"
-    created: "2021-03-15T17:55:33.746085-05:00"
+    created: "2021-03-16T15:24:59.343713-05:00"
     dependencies:
     - condition: clusterAgent.metricsProvider.useDatadogMetrics
       name: datadog-crds
@@ -109,7 +109,7 @@ entries:
     version: 2.10.7
   - apiVersion: v1
     appVersion: "7"
-    created: "2021-03-15T17:55:33.736575-05:00"
+    created: "2021-03-16T15:24:59.331998-05:00"
     dependencies:
     - condition: clusterAgent.metricsProvider.useDatadogMetrics
       name: datadog-crds
@@ -138,7 +138,7 @@ entries:
     version: 2.10.6
   - apiVersion: v1
     appVersion: "7"
-    created: "2021-03-15T17:55:33.727263-05:00"
+    created: "2021-03-16T15:24:59.319844-05:00"
     dependencies:
     - condition: clusterAgent.metricsProvider.useDatadogMetrics
       name: datadog-crds
@@ -167,7 +167,7 @@ entries:
     version: 2.10.5
   - apiVersion: v1
     appVersion: "7"
-    created: "2021-03-15T17:55:33.717187-05:00"
+    created: "2021-03-16T15:24:59.308354-05:00"
     dependencies:
     - condition: clusterAgent.metricsProvider.useDatadogMetrics
       name: datadog-crds
@@ -196,7 +196,7 @@ entries:
     version: 2.10.4
   - apiVersion: v1
     appVersion: "7"
-    created: "2021-03-15T17:55:33.707768-05:00"
+    created: "2021-03-16T15:24:59.29734-05:00"
     dependencies:
     - condition: clusterAgent.metricsProvider.useDatadogMetrics
       name: datadog-crds
@@ -225,7 +225,7 @@ entries:
     version: 2.10.3
   - apiVersion: v1
     appVersion: "7"
-    created: "2021-03-15T17:55:33.696873-05:00"
+    created: "2021-03-16T15:24:59.285968-05:00"
     dependencies:
     - condition: clusterAgent.metricsProvider.useDatadogMetrics
       name: datadog-crds
@@ -254,8 +254,18 @@ entries:
     version: 2.10.2
   polaris:
   - apiVersion: v1
+    appVersion: "1.3"
+    created: "2021-03-16T15:24:59.347223-05:00"
+    description: Validation of best practices in your Kubernetes clusters
+    digest: 0636b1ff06b6278501e6efdd8338a56b98d5c231d46a76aa1cde5386740e51c2
+    icon: https://raw.githubusercontent.com/FairwindsOps/polaris/master/pkg/dashboard/assets/favicon-32x32.png
+    name: polaris
+    urls:
+    - https://charts.novuhealth.io/polaris-1.3.3.tgz
+    version: 1.3.3
+  - apiVersion: v1
     appVersion: "1.2"
-    created: "2021-03-15T17:55:33.747593-05:00"
+    created: "2021-03-16T15:24:59.346493-05:00"
     description: Validation of best practices in your Kubernetes clusters
     digest: 7c833d291575af6514201b1b9b58f511f992187cfa9930e51e7373ae51de7a20
     icon: https://raw.githubusercontent.com/FairwindsOps/polaris/master/pkg/dashboard/assets/favicon-32x32.png
@@ -266,7 +276,7 @@ entries:
   twistlock-defender:
   - apiVersion: v1
     appVersion: 20.12.535
-    created: "2021-03-15T17:55:33.750322-05:00"
+    created: "2021-03-16T15:24:59.3521-05:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: 5d2bac1f708f810a56cc3b2a568474ad424c56e24d6286ecb67a3905b72931bc
     name: twistlock-defender
@@ -275,7 +285,7 @@ entries:
     version: 21.03.11
   - apiVersion: v1
     appVersion: 20.12.535
-    created: "2021-03-15T17:55:33.749136-05:00"
+    created: "2021-03-16T15:24:59.350081-05:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: ea29a7f65d5e83af2ce6ec6b3c384428874dc3c615757a389431e3cae184c7d1
     name: twistlock-defender
@@ -284,7 +294,7 @@ entries:
     version: 21.03.10
   - apiVersion: v1
     appVersion: 20.12.535
-    created: "2021-03-15T17:55:33.751511-05:00"
+    created: "2021-03-16T15:24:59.35385-05:00"
     description: Twistlock Defender Daemon Set Helm Chart
     digest: 835fb51b42c9eadf8bde84e9e0744818c7f239e7a1a637a15f92c4937c6d26a3
     name: twistlock-defender
@@ -294,7 +304,7 @@ entries:
   velero-backup-notification:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-03-15T17:55:33.752765-05:00"
+    created: "2021-03-16T15:24:59.356298-05:00"
     description: A Helm chart to send email/Slack notifications for Velero backups/restores
     digest: 9c097051593b40ac2b694f542a587b9755a49795c5fe0b57a3af0d32b61ff2ce
     name: velero-backup-notification
@@ -303,11 +313,11 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-03-15T17:55:33.752146-05:00"
+    created: "2021-03-16T15:24:59.355125-05:00"
     description: A Helm chart to send email/Slack notifications for Velero backups/restores
     digest: 71324debe91a2b67d8909509c6074d16632be2ed7a74a5d3550208cb8fb9778c
     name: velero-backup-notification
     urls:
     - https://charts.novuhealth.io/velero-backup-notification-1.0.0.tgz
     version: 1.0.0
-generated: "2021-03-15T17:55:33.680236-05:00"
+generated: "2021-03-16T15:24:59.255521-05:00"
