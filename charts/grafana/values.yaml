@@ -311,7 +311,7 @@ admin:
   userKey: admin-user
   passwordKey: admin-password
   externalSecret:
-    enabled: false
+    enabled: true
     password:
       key: ""
     user:
