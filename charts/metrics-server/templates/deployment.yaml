@@ -25,6 +25,7 @@ spec:
         - --kubelet-use-node-status-port
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: IfNotPresent
+        resources: {{- toYaml .Values.resources | nindent 12 }}
         livenessProbe:
           failureThreshold: 3
           httpGet:
