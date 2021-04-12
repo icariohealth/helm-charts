@@ -1,0 +1,12 @@
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: {{ .Values.github.organization }}-runner
+  namespace: {{ .Values.github.namespace }}
+spec:
+  template:
+    spec:
+      organization: {{ .Values.github.organization }}
+      resources:
+        {{- toYaml .Values.resources | nindent 8 }}
