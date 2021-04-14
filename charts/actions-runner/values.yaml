@@ -3,6 +3,10 @@ github:
   organization: ""
   namespace: ""
 
+image:
+  repository: 'summerwind/actions-runner'
+  tag: 'latest'
+
 resources: {}
   # limits:
   #   cpu: 100m

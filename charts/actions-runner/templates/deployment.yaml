@@ -10,3 +10,5 @@ spec:
       organization: {{ .Values.github.organization }}
       resources:
         {{- toYaml .Values.resources | nindent 8 }}
+      containers:
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
