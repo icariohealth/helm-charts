@@ -4,20 +4,17 @@ github:
   namespace: ""
 
 image:
-  repository: 'summerwind/actions-runner'
-  tag: 'latest'
+  repository: "summerwind/actions-runner"
+  tag: "v2.277.1"
+
+
+replicas: 1
 
 resources: {}
-  # limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  # requests:
-  #   cpu: 100m
-  #   memory: 128Mi
 
 scaling:
   replicas:
-    max: 10
-    min: 1
+    max: 15
+    min: 5
   scaledown:
     delay: 60

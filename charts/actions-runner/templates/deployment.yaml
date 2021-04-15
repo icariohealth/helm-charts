@@ -2,13 +2,14 @@
 apiVersion: actions.summerwind.dev/v1alpha1
 kind: RunnerDeployment
 metadata:
-  name: {{ .Values.github.organization }}-runner
-  namespace: {{ .Values.github.namespace }}
+  name: novu-runner
+  namespace: github
 spec:
+  replicas: 1
   template:
     spec:
-      organization: {{ .Values.github.organization }}
+      organization: novu
+      image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+      imagePullPolicy: {{ .Values.image.pullPolicy }}
       resources:
-        {{- toYaml .Values.resources | nindent 8 }}
-      containers:
-        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        {{- toYaml .Values.resources | nindent 12 }}
