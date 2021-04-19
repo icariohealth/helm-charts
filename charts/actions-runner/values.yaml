@@ -18,3 +18,5 @@ scaling:
     min: 5
   scaledown:
     delay: 60
+
+tolerations: {}
