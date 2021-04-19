@@ -1,15 +1,15 @@
 ---
-docker:
-  enabled: false
-  runnercontainer: true
+# dind:
+#   enabled: false
+#   runnercontainer: true
 
 github:
   organization: ""
   namespace: ""
 
 image:
-  repository: "summerwind/actions-runner"
-  tag: "v2.277.1"
+  repository: 'summerwind/actions-runner'
+  tag: 'v2.277.1'
 
 
 replicas: 1
