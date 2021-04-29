@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cluster-info
+  namespace: {{ .Values.namespace }}
+  labels:
+    k8s-app: fluentd-cloudwatch
+data:
+  cluster.name: {{ .Values.cluster.name }}
+  logs.region: {{ .Values.cluster.region }}
