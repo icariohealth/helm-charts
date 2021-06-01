@@ -11,6 +11,9 @@ spec:
       organization: novu
       image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
       imagePullPolicy: {{ .Values.image.pullPolicy }}
+      serviceAccountName: gh-actions-runner
+      securityContext:
+        fsGroup: 1001
       resources:
         {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.tolerations }}

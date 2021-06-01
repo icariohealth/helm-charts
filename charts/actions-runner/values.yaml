@@ -9,7 +9,7 @@ github:
 
 image:
   repository: 'summerwind/actions-runner'
-  tag: 'v2.277.1'
+  tag: 'v2.278.0'
 
 
 replicas: 1
