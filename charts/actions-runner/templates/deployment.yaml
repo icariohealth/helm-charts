@@ -11,7 +11,7 @@ spec:
       organization: novu
       image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
       imagePullPolicy: {{ .Values.image.pullPolicy }}
-      serviceAccountName: gh-actions
+      serviceAccountName: gh-runner
       securityContext:
         fsGroup: 1001
       resources:

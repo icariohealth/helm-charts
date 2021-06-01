@@ -23,4 +23,8 @@ scaling:
   scaledown:
     delay: 60
 
+serviceAccount:
+  create: true
+  annotations: {}
+
 tolerations: {}
