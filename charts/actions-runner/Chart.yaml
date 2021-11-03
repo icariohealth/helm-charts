@@ -2,7 +2,7 @@ apiVersion: v2
 name: actions-runner
 description: 'A helm chart for github-actions-runners'
 type: application
-version: 0.2.6
+version: 0.2.7
 appVersion: "2.278.0"
 maintainers:
 - email: cae+helm@icariohealth.com
