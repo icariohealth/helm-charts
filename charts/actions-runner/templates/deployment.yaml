@@ -2,13 +2,13 @@
 apiVersion: actions.summerwind.dev/v1alpha1
 kind: RunnerDeployment
 metadata:
-  name: novu-runner
+  name: icario-runner
   namespace: github
 spec:
   replicas: 1
   template:
     spec:
-      organization: novu
+      organization: icario
       image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
       imagePullPolicy: {{ .Values.image.pullPolicy }}
       serviceAccountName: gh-runner
