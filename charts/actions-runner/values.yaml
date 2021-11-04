@@ -12,7 +12,8 @@ image:
   tag: 'v2.278.0'
 
 
-replicas: 1
+replicas:
+  count: 10
 
 resources: {}
 
