@@ -5,7 +5,7 @@ metadata:
   name: icario-runner
   namespace: github
 spec:
-  replicas: 1
+  replicas: "{{ .Values.replicas }}"
   template:
     spec:
       organization: "{{ .Values.github.organization }}"
