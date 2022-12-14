@@ -24,8 +24,6 @@ spec:
       nodeSelector:
         {{ .Values.node_selector }}
 {{- end}}
-      tolerations:
-{{ toYaml .Values.tolerations | indent 8 }}
       containers:
       - name: twistlock-defender
         image: {{ .Values.image_name }}
